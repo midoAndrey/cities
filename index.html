@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test</title>
+</head>
+<body>
+    <header>
+        <div class="countries">
+            <h1>Countries of the World</h1> 
+        </div>
+    </header>
+    <div class="container">
+        <div class="left">
+            <h2>Countries</h2>
+            <ul class="nav">
+                <li><h3>UK</h3></li>
+                <li class="radiusleft">The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom(UK) or Britain, is a sovereign state in Europe</li>
+                <li><h3>Germany</h3></li>
+                <li class="radiusleft">Germany, officially the Federal Republic of Germany, is a federal parliamentary republic in western - central Europe</li>
+                <li><h3>Spain</h3></li>
+                <li class="radiusleft">Spain, officially the Kingdom of Spain, is a sovereign state located on the Iberian Peninsula in southwestern Europe</li>
+                <li><h3>France</h3></li>
+                <li class="radiusleft">France, officially the French Republic, is a unitary sovereign state comprising territory in western Europe and several overseas regions and territories.</li>
+                </ul>
+        </div>
+        <div class="right">
+            <h2 class="h2">Cities</h2>
+            <ul class="nav nav-right">
+                <li class="radiusright"><button class="add">+Add city</button>
+                    <form action="#" class="form">
+                        <input type="text" name="text" placeholder="Country name" class="input" required>
+                        <input type="text" name="text" placeholder="Country description" class="input" required>
+                        <button class="add submit"type="submit">Submit</button>
+                        <button class="btn cancel"type="submit">cancel</button>
+                    </form> </li>
+                <li ><h3>Cambridge</h3></li>
+                <li class="radiusright">is a university and the  county town of Cambridgeshire, England, on the River Cam about 50 miles(80km) north of London. At the United  Kingdom Census 2011, its population was 123,867, including 24,488 students.</li>
+                <li><h3>Chester</h3></li>
+                <li class="radiusright">is a walled city in Chesire, England, on the riverGermany, officially the Federal Republic of Germany, is a federal parliamentary republic in western - central Europe</li>
+                <li><h3>Liverpool</h3></li>
+                <li class="radiusright">Spain, officially the Kingdom of Spain, is a sovereign state located on the Iberian Peninsula in southwestern Europe</li>
+                <li><h3>London</h3></li>
+                <li class="radiusright">France, officially the French Republic, is a unitary sovereign state comprising territory in western Europe and several overseas regions and territories.</li>
+                <li><h3>Manchester</h3></li>
+                <li class="radiusright">France, officially the French Republic, is a unitary sovereign state comprising territory in western Europe and several overseas regions and territories.</li>
+                <li><h3>Oxford</h3></li>
+                <li>France, officially the French Republic, is a unitary sovereign state comprising territory in western Europe and several overseas regions and territories.</li>
+                </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <h4 class="end"> Test task</h4>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("add");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>
