@@ -5,7 +5,7 @@ body{
     margin: 0 auto;
 }
 .countries{
-    background-color: #1c40dd;
+    background-color: #0072bc;
     width: auto;
     margin: 0 auto;
     padding: 0 auto;
@@ -16,7 +16,7 @@ h1{
     margin-left: 200px;
     list-style-type:none;
     width: auto;
-    color: aliceblue;
+    color: #fefefe;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -27,7 +27,7 @@ h2{
 }
 .nav{
     text-decoration: none;
-    background-color: rgb(229, 223, 233);
+    background-color: #f0f0f0;
     list-style-type:none;
     margin-left: 200px;
     padding-left: 10px;
@@ -38,7 +38,7 @@ h2{
     justify-content: space-between;
 }
 .radiusleft{
-    border-bottom:1px solid  #f1f5f1; 
+    border-bottom:3px solid  #ffffff; 
     padding-bottom: 10px;
     padding-top: 5px;
 }
@@ -46,6 +46,8 @@ h2{
     border-bottom:1px solid  #9b9e9b; 
     padding-bottom: 10px;
     padding-top: 5px;
+    justify-content: space-between;
+
 }
 .nav-right{
     border: 1px solid  #9b9e9b;
@@ -55,7 +57,7 @@ h2{
     padding-left: 10px;
 }
 .footer{
-    background-color:rgb(39, 38, 38);
+    background-color:#3d3d3d;
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -63,7 +65,7 @@ h2{
 }
 h4{
     font-family: 'Roboto', sans-serif;
-    color: rgb(233, 211, 211);
+    color: #9f9f9f;
     margin-left: 200px;  
 }
 .left{
@@ -74,17 +76,17 @@ h4{
   margin-left: 30px;
 }
 .add{
-    background-color: #1c40dd;
+    background-color: #0072bc;
     color: white;
     cursor: pointer;
     padding: 5px;
     text-align: center;
     outline: none;
+    border-radius: 3px;
 }
 .active, .add:hover {
-    background-color: #324bbb;
+    background-color: #0072bc;
 }
-  
 .form {
     padding: 0 18px;
     /* max-height: 0; */
@@ -107,4 +109,14 @@ h4{
     height: 50px;
     border: 1px solid #bbbbbb;
     border-radius: 5px;
+}
+.trash{
+    justify-content: right;
+    width: 20px;
+    height: 20px;
+}
+.pencil{
+    justify-content: right;
+    width: 20px;
+    height: 20px;
 }
